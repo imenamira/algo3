@@ -1,0 +1,30 @@
+
+
+ 
+  FUNCTION dot_product( vect_A[],  vect_B[]) : INTEGER
+  VAR
+     ps : INTEGER := 0; 
+  BEGIN
+       FOR i FROM 0 TO i < 3   DO
+         ps = ps + vect_A[i] * vect_B[i]; 
+             END_FOR
+      RETURN ps ;
+  END
+   
+
+
+ALGORITHM algorithm_name
+VAR
+    i,j :INTEGER :=0;
+    tab : ARRAY_OF vecteur : ARRAY_OF INTEGER[3]; [50];
+    res :INTEGER ;
+BEGIN
+   FOR i FROM 0 TO tab.length -2   DO
+       FOR j FROM i+1 TO tab.length -1 DO
+         res =  dot_product( tab[i],  tab[j]);
+         if (res ==0)  write("le produit de deux vecteurs ",vect_A[i] ,"et" vect_B[i] "=", res) ; 
+       END_FOR
+       
+   END_FOR
+   
+END
